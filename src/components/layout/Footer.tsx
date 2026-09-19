@@ -15,6 +15,10 @@ const productLinks = [
   { name: "Adhiora Studio", href: "/products" },
 ];
 
+const freeToolLinks = [
+  { name: "Free Business Tools", href: "/free-tools" },
+];
+
 const legalLinks = [
   { name: "Privacy Policy", href: "/privacy-policy" },
   { name: "Terms of Use", href: "/terms-of-use" },
@@ -23,7 +27,7 @@ const legalLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-[#0b2347] text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-3 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <Image
             src="/brand/adhikrishna-logo-footer.png"
@@ -74,12 +78,28 @@ export default function Footer() {
             ))}
           </div>
         </div>
+
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-wide text-[#D4AF37]">
+            Free Tools
+          </h3>
+
+          <div className="mt-4 flex flex-col gap-3 text-sm text-gray-300">
+            {freeToolLinks.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="hover:text-white"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="border-t border-white/10 px-6 py-6 text-center text-sm text-gray-400">
-        <p>
-          contact@adhikrishnasolutions.com
-        </p>
+        <p>contact@adhikrishnasolutions.com</p>
 
         <div className="mt-3 flex justify-center gap-4">
           {legalLinks.map((item) => (

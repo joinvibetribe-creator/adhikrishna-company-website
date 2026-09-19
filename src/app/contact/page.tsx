@@ -33,7 +33,7 @@ export default function ContactPage() {
         <section className="bg-white py-24">
           <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
             <h1 className="text-5xl font-bold text-[#0b2347]">
-              Let's Build Something Meaningful
+              Let&apos;s Build Something Meaningful
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-600">
