@@ -14,7 +14,7 @@ type VerificationResult = {
   message?: string;
 };
 
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://astrajanma-backend.onrender.com";
 
 export default function VerifyEmailPage() {
   const [state, setState] =
